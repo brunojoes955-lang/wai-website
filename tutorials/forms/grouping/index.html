@@ -11,13 +11,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1774545821630128150";
+      element.src = "/WAI/assets/scripts/main.js?1774606387511139671";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1774545821630128150">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1774606387511139671">
 
 <title> Grouping Controls | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
@@ -299,7 +299,7 @@
 
 <h3 class="ex inap" id="related-fields">Related fields</h3>
 
-<p>This example shows form fields to enter shipping and billing addresses. As the labels in both groups have the same text, the <code class="language-plaintext highlighter-rouge">fieldset</code> element also helps to distinguish the form fields by their groups. In case the <code class="language-plaintext highlighter-rouge">&lt;legend&gt;</code> is not read by screen readers (see note below), labels for the first form control in each group should include the group’s name. This name can be hidden visually.</p>
+<p>This example shows form fields to enter shipping and billing addresses. As the labels in both groups have the same text, the <code class="language-plaintext highlighter-rouge">fieldset</code> element also helps to distinguish the form fields by their groups.</p>
 
 <aside class="box box-example"><header class="box-h  box-h-example"> Example</header><div class="box-i">
 
@@ -307,7 +307,7 @@
 	<fieldset style="float: left; border: 1px solid #888; padding: 5px; margin-right: 10px;">
 		<legend>Shipping Address:</legend>
 		<div>
-			<label for="shipping_name"><span class="visuallyhidden">Shipping </span>Name:</label><br />
+			<label for="shipping_name">Name:</label><br />
 			<input type="text" name="shipping_name" id="shipping_name" />
 		</div>
 		<div>
@@ -330,7 +330,7 @@
 	<fieldset style="float: left; border: 1px solid #888; padding: 5px;">
 		<legend>Billing Address:</legend>
 		<div>
-			<label for="billing_name"><span class="visuallyhidden">Billing </span>Name:</label><br />
+			<label for="billing_name">Name:</label><br />
 			<input type="text" name="billing_name" id="billing_name" />
 		</div>
 		<div>
@@ -358,9 +358,7 @@
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;fieldset&gt;</span>
 	<span class="nt">&lt;legend&gt;</span>Shipping Address:<span class="nt">&lt;/legend&gt;</span>
 	<span class="nt">&lt;div&gt;</span>
-		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"shipping_name"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>Shipping <span class="nt">&lt;/span&gt;</span>Name:
-    <span class="nt">&lt;/label&gt;&lt;br&gt;</span>
+		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"shipping_name"</span><span class="nt">&gt;</span>Name:<span class="nt">&lt;/label&gt;&lt;br&gt;</span>
 		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"shipping_name"</span> <span class="na">id=</span><span class="s">"shipping_name"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div&gt;</span>
@@ -372,9 +370,7 @@
 <span class="nt">&lt;fieldset&gt;</span>
 	<span class="nt">&lt;legend&gt;</span>Billing Address:<span class="nt">&lt;/legend&gt;</span>
 	<span class="nt">&lt;div&gt;</span>
-		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"billing_name"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>Billing <span class="nt">&lt;/span&gt;</span>Name:
-    <span class="nt">&lt;/label&gt;&lt;br&gt;</span>
+		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"billing_name"</span><span class="nt">&gt;</span>Name:<span class="nt">&lt;/label&gt;&lt;br&gt;</span>
 		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"billing_name"</span> <span class="na">id=</span><span class="s">"billing_name"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div&gt;</span>
@@ -406,7 +402,7 @@
 	<div role="group" aria-labelledby="shipping_head" style="float: left; border: 1px solid #333; padding: 0 .5em .5em; margin-right: 1em;">
 		<div id="shipping_head" style="font-weight: bold; padding: .25em 0;">Shipping Address:</div>
 		<div>
-			<label for="aria_shipping_name"><span class="visuallyhidden">Shipping </span>Name:</label><br />
+			<label for="aria_shipping_name">Name:</label><br />
 			<input type="text" name="aria_shipping_name" id="aria_shipping_name" />
 		</div>
 		<div>
@@ -429,7 +425,7 @@
 	<div role="group" aria-labelledby="billing_head" style="float: left; border: 1px solid #333; padding: 0 .5em .5em;">
 		<div id="billing_head" style="font-weight: bold; padding: .25em 0;">Billing Address:</div>
 		<div>
-			<label for="aria_billing_name"><span class="visuallyhidden">Billing </span>Name:</label><br />
+			<label for="aria_billing_name">Name:</label><br />
 			<input type="text" name="aria_billing_name" id="aria_billing_name" />
 		</div>
 		<div>
@@ -453,16 +449,12 @@
 
 </div></aside>
 
-<p>Because WAI-ARIA not fully supported in all web browser and screen reader combinations, a group identifier should be added to the first form control in the group.</p>
-
 <aside class="box box-example"><header class="box-h  box-h-example"> Code Snippet</header><div class="box-i">
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-labelledby=</span><span class="s">"shipping_head"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"shipping_head"</span><span class="nt">&gt;</span>Shipping Address:<span class="nt">&lt;/div&gt;</span>
 	<span class="nt">&lt;div&gt;</span>
-		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"shipping_name"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>Shipping <span class="nt">&lt;/span&gt;</span>Name:
-    <span class="nt">&lt;/label&gt;&lt;br&gt;</span>
+		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"shipping_name"</span><span class="nt">&gt;</span>Name:<span class="nt">&lt;/label&gt;&lt;br&gt;</span>
 		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"shipping_name"</span> <span class="na">id=</span><span class="s">"shipping_name"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;/div&gt;</span>
 	[…]
@@ -470,9 +462,7 @@
 <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-labelledby=</span><span class="s">"billing_head"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"billing_head"</span><span class="nt">&gt;</span>Billing Address:<span class="nt">&lt;/div&gt;</span>
 	<span class="nt">&lt;div&gt;</span>
-		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"billing_name"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>Billing <span class="nt">&lt;/span&gt;</span>Name:
-    <span class="nt">&lt;/label&gt;&lt;br&gt;</span>
+		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"billing_name"</span><span class="nt">&gt;</span>Name:<span class="nt">&lt;/label&gt;&lt;br&gt;</span>
 		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"billing_name"</span> <span class="na">id=</span><span class="s">"billing_name"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;/div&gt;</span>
 	[…]
@@ -584,7 +574,7 @@ https://github.com/w3c/wai-website/edit/main/pages/design-develop/tutorials/form
         
           Updated
         
-        27 July 2019
+        27 March 2026
         
       </div>
       <div>
@@ -653,9 +643,9 @@ https://github.com/w3c/wai-website/edit/main/pages/design-develop/tutorials/form
       rules apply unless otherwise noted. See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1774545821630128150"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1774606387511139671"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1774545821630128150"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1774606387511139671"></script>
 <script>
   svg4everybody();
 </script><script>
